@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF -8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--barre de nav--><a id="escape-link" href="https://example.com">Quitter la page</a>
+
+<style>
+  #escape-link {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+  }
+</style>
+
+<script>
+  const link = document.querySelector("#escape-link");
+
+  link.addEventListener("pointerenter", (event) => {
+    if (event.pointerType !== "mouse") return;
+
+    link.style.left = `${Math.random() * (innerWidth - link.offsetWidth)}px`;
+    link.style.top = `${Math.random() * (innerHeight - link.offsetHeight)}px`;
+  });
+</script>
+
+<nav>
+<ul>
+<li><a href="">Accueil</a></li>
+<li><a href="">A propos</a></li>
+<li><a href="">Experience professionel</a></li>
+<li><a href="">Cv</a></li>
+<li><a href="">Contact</a></li>
+</ul>
+</nav>
+<!--Section Accueil-->
+<section>
+<h2>Accueil</h2>
+<p>Bienvenue sur mon portfolio</p>  
+<h3>Video de presentation</h3>
+<video width="400" controls>
+<Source src="" type="video/mp4">
+</video>
+
+
+
+<iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/XcknNYPGPFk"
+    title="Vidéo YouTube"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+</iframe>
+
+</section>
+
+<!--Section a propos-->
+<section>
+<h2>A propos</h2>
+<p>Je suis etudiant en developpement web</p>
+<h3>Musique</h3>
+<audio controls>
+<source src="" type="audio/mpeg">
+</audio>     
+<h3>Mes passions</h3>
+<ul>
+<li>Le code</li>    
+<li>Le sport</li>
+<li>La lecture</li>
+</ul>
+</section>
+
+<!--Experience pro-->
+<h2>Experiences professionelles</h2>
+ <p> <strong>2026 - Stage developpement web </strong> <br> Integration de pages HTML/CSS </p>
+
+ <p><strong>2025 - Freelance</strong> <br> Creation de petits sites internet </p>
+
+ <h3>Liens utiles :</h3>
+<ul>
+<li><a href="">Mes projets</a></li>
+<li><a href="https://github.com/lem2-commits">Mon Github</a></li>
+</ul>
+</section>
+
+<!--CV-->
+<section>
+<h2>CV</h2>
+</section>
+<table border="1">
+    <tr>
+    <th>Annee</th>
+    <th>formation</th>
+    </tr>
+    <tr>
+        <td>2025-2026</td>
+        <td>Formation en developpement web</td>
+    </tr>
+    <tr>
+        <td>2024-2025</td>
+        <td>BTS</td>
+    </tr>
+</table>
+<!--Contact-->
+<section>
+<h2>Contact</h2>
+<form>
+    <label for="name">Nom :</label>
+    <input type="text" id="name" name="name" required> <br><br>
+
+    <label for="email">email :</label>
+    <input type="email" id="email" name="email" required> <br><br>
+
+    <label for="message">Message :</label>
+    <textarea id="message" name="message" required></textarea> <br><br>
+    
+    <input type="submit" value="Envoyer">
+</form>
+</section>
+</body>
+<!--pied-->
+<footer>
+    <p>&copy; 2026 Mon portfolio. Tout droits reserves. </p>
+</footer>
